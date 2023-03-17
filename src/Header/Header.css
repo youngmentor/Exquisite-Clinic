@@ -1,5 +1,66 @@
-.Header_Main{
+.Header_Main {
     width: 100%;
     background-color: white;
-    height: 15%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Header_Main_Wrap {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.Header_Logo {
+    width: 80px;
+    height: 75px;
+    border-radius: 100%;
+}
+
+.Header_Navigator {
+    width: 500px;
+    /* background-color: red; */
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Header_Navigator  p{
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 4px;
+}
+.Header_Navigator p:hover{
+    background-color: #5E9ECC;
+}
+
+.Header_Button {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    gap: 20px;
+}
+
+.Header_Btt1 {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #5E9ECC;
+    cursor: pointer;
+    color: white;
+}
+
+.Header_Btt2 {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
