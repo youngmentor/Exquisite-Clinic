@@ -1,0 +1,51 @@
+.Mission_Main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+.Mission_Main_Wrap{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Mission_Wrap{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    /* background-color: green; */
+}
+.Our_Mission{
+    width: 250px;
+    height: 200px;
+    background-color: #5E9ECC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+ h4{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.Our_Vision{
+    width: 250px;
+    height: 200px;
+    background-color: #5E9ECC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+}
