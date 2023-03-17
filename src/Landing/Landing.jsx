@@ -6,7 +6,7 @@ const Landing = () => {
             <div className='Landing_Main_Wrap'>
                 <img src='/LandingPic.png' alt="" className='Landing_Img' />
                 <div className='Landin_Text'>
-                    <p>At Exquisite Physiotherapy Clinic, we understand your need to balance your busy schedule and good health at affordable cost.</p>
+                    <p>At <b className='b'>Exquisite Physiotherapy Clinic</b>, we understand your need to balance your busy schedule and good health at affordable cost.</p>
                     <button className='Landing_Appointment_Bttn'>Book An Appointment</button>
                 </div>
             </div>
