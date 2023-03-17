@@ -9,6 +9,7 @@
 .Landing_Main_Wrap{
     width: 80%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     /* background-color: blue; */
@@ -31,4 +32,12 @@
 }
 .b{
     color: #5E9ECC;
+}
+@media screen and (max-width: 426px){
+    .Landin_Text{
+        font-size: 15px;
+    }
+    .Landing_Img{
+        width: 150px;
+    }
 }
