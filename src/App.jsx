@@ -5,6 +5,7 @@ import "./App.css"
 import Header from './Header/Header'
 import Landing from './Landing/Landing'
 import Mission from './Mission/Mission'
+import Value from './Value/Value'
 function App() {
 
   return (
@@ -13,6 +14,7 @@ function App() {
        <Landing/>
        <About/>
        <Mission/>
+       <Value/>
     </div>
   )
 }
