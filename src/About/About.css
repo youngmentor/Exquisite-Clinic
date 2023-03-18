@@ -20,7 +20,8 @@ text-align: center;
 }
 .About_Main_Wrap p{
     /* width: 400px; */
-    font-size: 25px;
+    font-size: 20px;
+    color: white;
 }
 .List li{
    list-style-type: none;
@@ -32,7 +33,9 @@ text-align: center;
     .About_Main{
         width: 100%;
     }
-    .About_Main_Wrap{
+    .About_Main_Wrap p{
         font-size: 15px;
+        color: white;
+        /* color: rgb(212, 199, 199); */
     }
 }

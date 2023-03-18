@@ -3,6 +3,7 @@ import About from './About/About'
 // import './App.css'
 import "./App.css"
 import Appointment from './Appointment/Appointment'
+import Contact from './Contact/Contact'
 import Header from './Header/Header'
 import Landing from './Landing/Landing'
 import Mission from './Mission/Mission'
@@ -17,6 +18,7 @@ function App() {
        <Mission/>
        <Value/>
        <Appointment/>
+       <Contact/>
     </div>
   )
 }
