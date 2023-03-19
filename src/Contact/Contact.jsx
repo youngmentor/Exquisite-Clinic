@@ -27,7 +27,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className='Contact_Message_Wrap'>
+                <div className='Contact_Contact_Wrap'>
                     <h2>Contact Info</h2>
                     <div className='Contact_Wrap'>
 

@@ -5,27 +5,37 @@
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    /* background-color: red; */
 }
 
 .Contact_Main_Wrap {
     width: 75%;
+    /* height: 400px; */
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: column; */
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
     margin-top: 50px;
+    border-radius: 10px;
+    border: 1px solid rgb(206, 203, 203);
+    padding: 10px;
 }
 
 .Contact_Message_Wrap{
-    width: 50%;
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Contact_Contact_Wrap{
+   width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .Message_Textarea {
-    width: 400px;
+    width: 320px;
     outline: none;
     border: none;
     padding: 10px;
@@ -38,7 +48,7 @@
     flex-direction: column;
     gap: 20px;
     background-color: #5E9ECC;
-    margin-top: 50px;
+    margin-top: 70px;
     padding: 15px;
     color: white;
     border-radius: 10px;
@@ -76,6 +86,7 @@
 
 .Message_Inpu_Main {
     display: flex;
+   
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -85,6 +96,7 @@
 
 .Message_Input_Wrap {
     display: flex;
+    flex-wrap: wrap;
     /* flex-direction: column; */
     gap: 20px;
 }
@@ -123,12 +135,27 @@
     }
     
     .Address {
-        width: 100%;
+        /* width: 100%; */
         display: flex;
         align-items: center;
         justify-content: space-between;
         font-size: 13px;
         gap: 20px;
 
+    }
+    .Message_Textarea{
+        width: 260px;
+    }
+    .Message_Subject {
+        width: 260px;
+    }
+    .Message_Input {
+        gap: 10px;
+        width: 260px;
+        height: 40px;
+        border-radius: 5px;
+        padding: 10px;
+        border: none;
+        outline: none;
     }
 }
