@@ -62,4 +62,25 @@
     border: 1px solid rgb(184, 183, 183);
     cursor: pointer;
     outline: none;
+    border: none;
+}
+@media screen and (max-width: 426px){
+    .Appointment_Service{
+        width: 320px;
+        height: 40px;
+        border-radius: 5px;
+        padding: 10px;
+        border: none;
+        outline: none;
+    
+    }
+    .Appointment_Input{
+        gap: 10px;
+        width: 150px;
+        height: 40px;
+        border-radius: 5px;
+        padding: 10px;
+        border: none;
+        outline: none;
+    }
 }

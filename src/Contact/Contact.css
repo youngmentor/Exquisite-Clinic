@@ -1,14 +1,134 @@
-.Contact_Main{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-}
-.Contact_Main_Wrap{
-    width: 80%;
+.Contact_Main {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
+}
+
+.Contact_Main_Wrap {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.Contact_Message_Wrap{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Message_Textarea {
+    width: 400px;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+
+.Contact_Wrap {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #5E9ECC;
+    margin-top: 50px;
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+
+}
+
+.PhoneNumber {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Email {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Address {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* font-size:10px; */
+}
+
+.Message_Main_Wrap {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.Message_Inpu_Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.Message_Input_Wrap {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 20px;
+}
+
+.Message_Input {
+    gap: 10px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.Message_Subject {
+    width: 320px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+@media screen and (max-width: 426px){
+    .PhoneNumber {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 13px;
+    }
+    
+    .Email {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 13px;
+    }
+    
+    .Address {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 13px;
+        gap: 20px;
+
+    }
 }
