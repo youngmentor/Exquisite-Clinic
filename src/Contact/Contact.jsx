@@ -45,7 +45,7 @@ const Contact = () => {
                         </div>
                         <div>
                             <p>twitter:</p>
-                            <p></p>
+                            <p> @exquisitephysio</p>
                         </div>
                     </div>
                 </div>

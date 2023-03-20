@@ -55,7 +55,7 @@
     border: none;
     background-color: #5E9ECC;
     cursor: pointer;
-    color: white;
+    /* color: white; */
 }
 
 .Header_Btt2 {
@@ -83,29 +83,42 @@
         width: 60%;
         height: 100%;
         position: fixed;
-        top: 80px;
+        top: 95px;
         left: 0px;
         flex-direction: column;
         align-items: center;
         background-color: #5E9ECC;
     }
     .Header_Navigator_Mob{
-        width: 100%;
+        width: 40%;
         display: flex;
         flex-direction: column;
         margin-top: 20px;
-      margin-left: 50px;
+      /* margin-left: 50px; */
         justify-content: center;
         gap: 20px;
+        cursor: pointer;
     }
     .Header_Button_Mobile{
-        width: 100%;
+        width: 40%;
         display: flex;
         flex-direction: column;
         margin-top: 20px;
-      margin-left: 50px;
+      /* margin-left: 50px; */
         justify-content: center;
         gap: 20px;
+        /* padding: 10px; */
+       
+    }
+    .Header_Navigator_Mob p:hover{
+        background-color: white;
+        padding: 10px;
+        border-radius: 3px;
+    }
+    .Header_Button_Mobile p:hover{
+        background-color: white;
+        padding: 10px;
+        border-radius: 3px;
     }
     
 }

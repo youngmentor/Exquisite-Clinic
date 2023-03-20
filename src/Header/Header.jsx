@@ -36,8 +36,8 @@ const Header = () => {
                                 <p onClick={() => navigate("/product")}>Products</p>
                             </div>
                             <div className='Header_Button_Mobile'>
-                                <p className='Header_Btt1'>Sign Up</p>
-                                <p className='Header_Btt2'>Log In</p>
+                                <p className='Header_Btt1_Mob'>Sign Up</p>
+                                <p className='Header_Btt2_Mob'>Log In</p>
                             </div>
                         </div>
                     )
