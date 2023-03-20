@@ -1,5 +1,10 @@
 import React from 'react'
 import "./Landing.css"
+import About from '../About/About'
+import Mission from '../Mission/Mission'
+import Value from '../Value/Value'
+import Appointment from '../Appointment/Appointment'
+import Contact from '../Contact/Contact'
 const Landing = () => {
     return (
         <div className='Landing_Main'>
@@ -10,6 +15,11 @@ const Landing = () => {
                     <button className='Landing_Appointment_Bttn'>Book An Appointment</button>
                 </div>
             </div>
+            <About />
+            <Mission/>
+            <Value/>
+            <Appointment/>
+            <Contact/>
         </div>
     )
 }

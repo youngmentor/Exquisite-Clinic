@@ -1,24 +1,23 @@
 import { useState } from 'react'
-import About from './About/About'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 // import './App.css'
 import "./App.css"
-import Appointment from './Appointment/Appointment'
-import Contact from './Contact/Contact'
 import Header from './Header/Header'
 import Landing from './Landing/Landing'
-import Mission from './Mission/Mission'
-import Value from './Value/Value'
+import Service from './OurService/Service'
+import Product from './Product/Product'
 function App() {
 
   return (
     <div className="App">
-       <Header/>
-       <Landing/>
-       <About/>
-       <Mission/>
-       <Value/>
-       <Appointment/>
-       <Contact/>
+     <HashRouter>
+     <Header />
+        <Routes>
+          <Route path='/' element={<Landing />} />
+          <Route path='/service' element={<Service />} />
+          <Route path='/product' element={<Product />} />
+        </Routes>
+     </HashRouter>
     </div>
   )
 }
