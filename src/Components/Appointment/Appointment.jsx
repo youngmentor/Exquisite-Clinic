@@ -1,6 +1,16 @@
 import React from 'react'
 import "./Appointment.css"
+import emailjs from 'emailjs-com';
 const Appointment = () => {
+//   const handleSubmit = (event) => {
+//     event.preventDefault();
+//     emailjs.sendForm('service_d8obzee', 'template_45l6f7r', event.target, '7yGHzIYav8nkKsJhp')
+//         .then((result) => {
+//             console.log(result.text);
+//         }, (error) => {
+//             console.log(error.text);
+//         });
+// }
   return (
     <div className='Appointment_Main'>
      <div className='Appointment_Main_Wrap'>

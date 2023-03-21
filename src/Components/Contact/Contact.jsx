@@ -1,9 +1,20 @@
 import React, { useEffect, useState } from 'react'
-
-
+import emailjs from 'emailjs-com';
 import "./Contact.css"
 const Contact = () => {
-    // console.log(setPosition)
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        emailjs.sendForm('service_d8obzee', 'template_45l6f7r', event.target, '7yGHzIYav8nkKsJhp')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    }
+
+    useEffect(() => {
+        // MessageForm()
+    }, [])
 
     return (
         <div className='Contact_Main'>
@@ -15,15 +26,24 @@ const Contact = () => {
                         {/* <h2>Book An Appointmnt</h2>
                         <p>Get your Consultation done by our experts</p> */}
                         <div className='Message_Inpu_Main'>
-                            <div className='Message_Input_Wrap'>
-                                <input type="text" className="Message_Input" placeholder='Your Name' />
-                                <input type="text" className="Message_Input" placeholder='Email' />
-                            </div>
-                            <input type="text" className='Message_Subject' placeholder='Subject' />
-                            <div className='Appointment_Textarea'>
-                                <textarea name="Message" id="" cols="30" rows="10" className='Message_Textarea'>Meassage</textarea>
-                            </div>
-                            <button className='Appointment_Bttn'>Send Message</button>
+                            <form onSubmit={handleSubmit}>
+                                <div className='Message_Input_Wrap'>
+                                    <label>Name:</label>
+                                    <input type="text" name="from_name" className="Message_Input" />
+                                    <label>Email:</label>
+                                    <input type="email" name="from_email" className="Message_Input" />
+                                </div>
+
+                                <label>Subject:</label>
+                                <input type="text" name="subject" className='Message_Subject' />
+
+                                <div className='Appointment_Textarea' >
+                                <label>Message:</label>
+                                <textarea name="message"  cols="30" rows="10" className='Message_Textarea' /> 
+                                </div>
+
+                                <button type="submit" className='Appointment_Bttn'>Send</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -43,7 +63,7 @@ const Contact = () => {
                             <p>Address: </p>
                             <p>No 3,James Igbe Street Off<br /> Orege-Mile2 Ajegunle Apapa LAGOS.</p>
                         </div>
-                        <div className='Twitter'> 
+                        <div className='Twitter'>
                             <p>twitter:</p>
                             <p> @exquisitephysio</p>
                         </div>
