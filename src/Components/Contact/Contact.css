@@ -144,14 +144,14 @@
 
     }
     .Message_Textarea{
-        width: 260px;
+        width: 240px;
     }
     .Message_Subject {
-        width: 260px;
+        width: 240px;
     }
     .Message_Input {
         gap: 10px;
-        width: 260px;
+        width: 240px;
         height: 40px;
         border-radius: 5px;
         padding: 10px;
