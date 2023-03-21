@@ -17,8 +17,17 @@
     width: 90%;
     display: flex;
     justify-content: space-between;
+    gap: 50px;
+    /* background-color: blue; */
 }        
-
+.Service_Div_Main_Wrap2{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    /* background-color: red; */
+    margin-top: 50px;
+} 
 .Service_Div_Main{
     width: 100%;
     display: flex;
@@ -37,8 +46,31 @@
 .Service_Text_Div p{
     /* margin-top: 20px; */
     text-align: center;
+    font-size: 15px;
 }
-.ServiceLeft_Div h4{
+.ServiceLeft_Div {
     width: 60%;
     text-align: center;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 70px;
+}
+.ServiceLeft_Div2 {
+    width: 60%;
+    text-align: center;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+}
+.ServiceLeft_Div h4{
+    width: 300px;
+}
+.ServiceLeft_Div2 h4{
+    width: 300px;
 }

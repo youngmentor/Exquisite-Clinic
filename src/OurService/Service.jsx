@@ -20,14 +20,14 @@ const Service = () => {
                 The stress of a megacity like Lagos, would not enable us be their physically to monitor our elderly ones so that is why you should be talking to us. At exquisite physiotherapy clinicl, we would help make sure they get the best form of physiotherapy care without the unnecessary cost of moving around and the headache of keeping uncomfortable appointments..</p>
             </div>
           </div>
-          <div className='Service_Div_Main_Wrap'>
+          <div className='Service_Div_Main_Wrap2'>
             <div className='Service_Text_Div'>
               <p>Our children are the leaders of tomorrow, conditions like;
                 Cerebral palsy, erb’s palsy, winged scapula, fracture, musculoskeletal sprains and strains etc.
                 Can sometimes be dilapidating for the mother/care giver to maintain. Especially for working mothers, not to worry, we can help ease the stress! We can help you see and treat your baby at home, daycare or creche to help you ease the process of motherhood. Remember, its Exquisite physiotherapy clinic, you’ll be getting the very best as we would carry you along with the entire treatment regimen. It would be just like you were there yourself!
                 Also, we assist in conditions like urinary incontinence, uterine prolapse, antenatal exercise design etc. All these while working with our trained physiotherapists to help you recover in record time...</p>
             </div>
-            <div className='ServiceLeft_Div'>
+            <div className='ServiceLeft_Div2'>
               <h4>2. Paediatric and O/G Physiotherapy (Mother and Baby care)</h4>
               <img src="/children.png" alt="" className='Service_Img' />
             </div>
