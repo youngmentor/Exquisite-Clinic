@@ -43,7 +43,7 @@ const Contact = () => {
                             <p>Address: </p>
                             <p>No 3,James Igbe Street Off<br /> Orege-Mile2 Ajegunle Apapa LAGOS.</p>
                         </div>
-                        <div>
+                        <div className='Twitter'> 
                             <p>twitter:</p>
                             <p> @exquisitephysio</p>
                         </div>

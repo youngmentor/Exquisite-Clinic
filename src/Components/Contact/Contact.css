@@ -119,6 +119,11 @@
     border: none;
     outline: none;
 }
+.Twitter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 @media screen and (max-width: 426px){
     .PhoneNumber {
         display: flex;
@@ -157,5 +162,18 @@
         padding: 10px;
         border: none;
         outline: none;
+    }
+    .Contact_Main_Wrap{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Contact_Contact_Wrap{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 }
