@@ -2,10 +2,10 @@ import { useState } from 'react'
 import { HashRouter, Route, Routes } from 'react-router-dom'
 // import './App.css'
 import "./App.css"
-import Header from './Header/Header'
-import Landing from './Landing/Landing'
-import Service from './OurService/Service'
-import Product from './Product/Product'
+import Header from './Components/Header/Header'
+import Landing from './Components/Landing/Landing'
+import Service from './Components/OurService/Service'
+import Product from './Components/Product/Product'
 function App() {
 
   return (
