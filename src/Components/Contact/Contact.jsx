@@ -11,6 +11,7 @@ const Contact = () => {
                 console.log(error.text);
             });
     }
+ 
 
     useEffect(() => {
         // MessageForm()
@@ -44,6 +45,7 @@ const Contact = () => {
 
                                 <button type="submit" className='Appointment_Bttn'>Send</button>
                             </form>
+                        
                         </div>
                     </div>
                 </div>
