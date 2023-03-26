@@ -22,9 +22,9 @@ const SignForm = (props) => {
                  onChange={handleChange}
                  required={props.required}
                  pattern={props.pattern}
-                //  focus={focus.toString()}
-                //  onBlur={whenFocus}
-                //  onFocus={()=> props.name === "confirmPassword" && setFocus(true)}
+                 focus={focus.toString()}
+                 onBlur={whenFocus}
+                 onFocus={()=> props.name === "confirmPassword" && setFocus(true)}
               />
               <span className='err'>{props.errMsg}</span>
             </label>

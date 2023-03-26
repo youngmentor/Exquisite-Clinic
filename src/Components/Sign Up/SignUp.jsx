@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import axios from "axios"
 import SignForm from './SignForm';
 import './SignUp.css'
+import { useNavigate } from 'react-router-dom';
 const SignUp = () => {
-
+const navigate =useNavigate()
     const [form, setForm] = useState({
         firstName: "",
         lastName: "",
@@ -33,7 +34,7 @@ const SignUp = () => {
         },
         {
             id: 3,
-            name: "Email",
+            name: "email",
             type: "text",
             label: "Email",
             placeholder: "Email",
@@ -62,14 +63,14 @@ const SignUp = () => {
     ]
 
     const handleSubmit = async (event) => {
-        setLoad(true)
+        // setLoad(true)
         try {
           event.preventDefault();
           console.log("clicked")
-          const response = await axios.post("https://eduglobal.onrender.com/api/admin/sign", form);
+          const response = await axios.post("https://exquisite-physioteraphy-clinic.onrender.com/api/adminsignup", form);
           console.log(response.data)
           console.log(response.data.message);
-          response.status === 200 ? navigate("/loginuser/login") : null  
+          response.status === 201 ? navigate("/login") : null  
           login_alert()
         } catch (error) {
           console.log("error")
@@ -89,7 +90,7 @@ const SignUp = () => {
             {Form.map((i) => (
               <SignForm key={i.id} {...i} handleChange={handleChange} form={form[i.name]} />
             ))}
-            <button type="submit" className='signbttn' >{load ? <Loading /> :"Sign Up"}</button>
+            <button type="submit" className='signbttn' >Sign Up</button>
             </form>
         </div>
     </div>
