@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
-
+import axios from "axios"
+import SignForm from './SignForm';
+import './SignUp.css'
 const SignUp = () => {
+
     const [form, setForm] = useState({
         firstName: "",
         lastName: "",
@@ -11,7 +14,7 @@ const SignUp = () => {
       const [load, setLoad] = useState(false)
 
 
-    const Form= [
+    const Form = [
         {
             id: 1,
             name: "firstName",
@@ -58,29 +61,35 @@ const SignUp = () => {
         },
     ]
 
-    // const handleSubmit = async (event) => {
-    //     setLoad(true)
-    //     try {
-    //       event.preventDefault();
-    //       console.log("clicked")
-    //       const response = await axios.post("https://eduglobal.onrender.com/api/admin/sign", form);
-    //       console.log(response.data)
-    //       console.log(response.data.message);
-    //       response.status === 200 ? navigate("/loginuser/login") : null  
-    //       login_alert()
-    //     } catch (error) {
-    //       console.log("error")
-    //     }
+    const handleSubmit = async (event) => {
+        setLoad(true)
+        try {
+          event.preventDefault();
+          console.log("clicked")
+          const response = await axios.post("https://eduglobal.onrender.com/api/admin/sign", form);
+          console.log(response.data)
+          console.log(response.data.message);
+          response.status === 200 ? navigate("/loginuser/login") : null  
+          login_alert()
+        } catch (error) {
+          console.log("error")
+        }
     
-    //   };
+      };
+      const handleChange = event => {
+        setForm((prevState) => {
+          return { ...prevState, [event.target.name]: event.target.value }
+        })
+      };
 
   return (
-    <div>
-        <div>
-            <form>
-                <input
-                className='SignUp_Input'
-                />
+    <div  className="main">
+        <div className='SignUp-main'>
+            <form onSubmit={handleSubmit}  className="formData" > 
+            {Form.map((i) => (
+              <SignForm key={i.id} {...i} handleChange={handleChange} form={form[i.name]} />
+            ))}
+            <button type="submit" className='signbttn' >{load ? <Loading /> :"Sign Up"}</button>
             </form>
         </div>
     </div>
