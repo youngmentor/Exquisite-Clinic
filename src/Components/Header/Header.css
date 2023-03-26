@@ -1,15 +1,17 @@
 .Header_Main {
     width: 100%;
-    background-color: white;
+    /* height: 100px; */
     display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
-    top: 0px;
+    top:0px;
+    background-color: #5E9ECC;
 }
 
 .Header_Main_Wrap {
     width: 90%;
+    /* background-color: red; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,8 +19,8 @@
 }
 
 .Header_Logo {
-    width: 80px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
     border-radius: 100%;
 }
 
@@ -52,10 +54,11 @@
     width: 150px;
     height: 30px;
     border-radius: 5px;
-    border: none;
+    border:  1px solid rgb(199, 196, 196);
     background-color: #5E9ECC;
     cursor: pointer;
-    /* color: white; */
+    color: white;
+
 }
 
 .Header_Btt2 {

@@ -24,8 +24,8 @@ const Header = () => {
                     <p onClick={() => navigate("/product")} >Products</p>
                 </div>
                 <div className='Header_Button'>
-                    <button className='Header_Btt1'>Sign Up</button>
-                    <button className='Header_Btt2'>Log In</button>
+                    <button className='Header_Btt1' onClick={() => navigate("/signup")} >Sign Up</button>
+                    <button className='Header_Btt2' onClick={() => navigate("/login")}  >Log In</button>
                 </div>
                 {
                     isOpen && (
@@ -36,8 +36,8 @@ const Header = () => {
                                 <p onClick={() => navigate("/product")}>Products</p>
                             </div>
                             <div className='Header_Button_Mobile'>
-                                <p className='Header_Btt1_Mob'>Sign Up</p>
-                                <p className='Header_Btt2_Mob'>Log In</p>
+                                <p className='Header_Btt1_Mob' onClick={() => navigate("/signup")} >Sign Up</p>
+                                <p className='Header_Btt2_Mob' onClick={() => navigate("/login")} >Log In</p>
                             </div>
                         </div>
                     )

@@ -1,8 +1,10 @@
 import React from 'react'
 import "./Service.css"
+import Header from '../Header/Header'
 const Service = () => {
   return (
     <div className='Service_Main'>
+      <Header />
       <div className='Service_Main_Wrap'>
         <h1>our service</h1>
         <h3>We provide exquisite physiotherapy services in the following area:</h3>

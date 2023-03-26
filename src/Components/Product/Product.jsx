@@ -1,9 +1,11 @@
 import React from 'react'
 import "./Product.css"
 import Products from './ProductData'
+import Header from '../Header/Header'
 const Product = () => {
   return (
     <div className='Product_Main'>
+      <Header />
       <div className="Product_Main_Wrap">
         <h1>Our Product</h1>
         <div className='Product_Card_Wrap'>

@@ -5,9 +5,11 @@ import Mission from '../Mission/Mission'
 import Value from '../Value/Value'
 import Appointment from '../Appointment/Appointment'
 import Contact from '../Contact/Contact'
+import Header from '../Header/Header'
 const Landing = () => {
     return (
         <div className='Landing_Main'>
+            <Header />
             <div className='Landing_Main_Wrap'>
                 <img src='/LandingPic.png' alt="" className='Landing_Img' />
                 <div className='Landin_Text'>
