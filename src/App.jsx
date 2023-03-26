@@ -8,6 +8,7 @@ import Login from './Components/Login/Login'
 import Service from './Components/OurService/Service'
 import Product from './Components/Product/Product'
 import SignUp from './Components/Sign Up/SignUp'
+import Verify from './Components/Sign Up/Verify'
 function App() {
 
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/product' element={<Product />} />
           <Route path='/signup' element={<SignUp/>}/>
           <Route path='/login' element={<Login/>}/>
+          <Route path='/verify/:id' element={<Verify />}/>
         </Routes>
      </HashRouter>
     </div>
