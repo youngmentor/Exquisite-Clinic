@@ -8,11 +8,11 @@ const Verify = () => {
   const [state, setState] = useState(false)
 
     const handleSubmit = async () => {
-        const response = await axios.post(`https://eduglobal.onrender.com/api/userVerify/${id}`)
+        const response = await axios.post(`https://exquisite-physioteraphy-clinic.onrender.com/api/adminVerify/${id}`)
         console.log(response)
         setState(true)
         setTimeout(() => {
-        response.status === 200 ?  navigate('loginuser/login') : null
+        response.status === 201 ?  navigate('/login') : null
         }, 3000);
     }
     useEffect(() => {
@@ -31,7 +31,7 @@ const Verify = () => {
     }
   return (
     <div style={style} className='verify'>
-    {!state ? <h1>Please Wait...</h1> :
+    {!state ? <h1>Please wait we are verifying...</h1> :
       <h1>Your verification was sucessful</h1>}
   </div >
   )
