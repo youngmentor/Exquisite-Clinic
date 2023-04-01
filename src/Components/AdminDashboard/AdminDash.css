@@ -1,0 +1,24 @@
+.DashBoard_Main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.DashBoard_Wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.DashBoard_Left{
+    width: 20%;
+    height: 100vh;
+    background-color: white;
+    padding: 10px;
+}
+.DashBoard_Right{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}

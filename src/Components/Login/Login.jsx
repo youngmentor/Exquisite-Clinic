@@ -40,7 +40,7 @@ const Login = () => {
 
     // }
     // const logOut = async () => {
-    //     const res = await axios.post(`https://eduglobal.onrender.com/api/admin/logout/${user?._id}`)
+    //     const res = await axios.post(`https://exquisite-physioteraphy-clinic.onrender.com/api/logout/${user?._id}`)
     //     console.log(res.data)
     //     res.status === 200 ? dispatch(clearUser()) : null
     //     res.status === 201 ? navigate('/loginuser/login') : null
@@ -50,15 +50,15 @@ const Login = () => {
     const handleLogin = async (e) => {
         console.log("clicked")
         e.preventDefault();
-        await axios.post('https://eduglobal.onrender.com/api/admin/login', value)     
+        await axios.post('https://exquisite-physioteraphy-clinic.onrender.com/api/adminlogin', value)     
             .then(function (res) {
-                res.data.data.email === value.email ? dispatch(addUser(res.data.data)) : null
+                console.log(res.data)
+                // res.data.data.email === value.email ? dispatch(addUser(res.data.data)) : null
                 res.data.data.email === value.email ?  navigate('/admin') : null
                 // if (res.data.data.isVerifield === true ) {
                 //     navigate('/admin') 
                 //   } else {
                 //     logOut()
-                //     setLoad(false)
                 //   }
                 
 
@@ -76,7 +76,9 @@ const Login = () => {
 
     return (
         <main className="Login" >
+           
             <form onSubmit={handleLogin} className="login-wrap"   >
+                <h4>Welcome Login to your account </h4>
                 <div className="LoginForm">
                     {field.map((i) => (
                         <label key={i.id}>
@@ -96,7 +98,9 @@ const Login = () => {
                     ))}
                     <p className='forg' onClick={() => navigate("/forgetpassword")} >Forgot Paasword ?</p>
                     <button type="submit" className="Loginbtt" >Login</button>
+                    
                 </div>
+                <p className="Back_Home">Back to Home Page </p>
             </form>
         </main>
     );

@@ -2,7 +2,8 @@ import { useState } from 'react'
 import { HashRouter, Route, Routes } from 'react-router-dom'
 // import './App.css'
 import "./App.css"
-import Header from './Components/Header/Header'
+import AdminDash from './Components/AdminDashboard/AdminDash'
+// import Header from './Components/Header/Header'
 import Landing from './Components/Landing/Landing'
 import Login from './Components/Login/Login'
 import Service from './Components/OurService/Service'
@@ -22,6 +23,7 @@ function App() {
           <Route path='/signup' element={<SignUp/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/verify/:id' element={<Verify />}/>
+          <Route path='/admin' element={<AdminDash/>}/>
         </Routes>
      </HashRouter>
     </div>
