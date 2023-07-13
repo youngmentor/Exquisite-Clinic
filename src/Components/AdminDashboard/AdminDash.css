@@ -8,11 +8,13 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    background-color: red;
 }
 .DashBoard_Left{
     width: 20%;
     height: 100vh;
     background-color: white;
+    background-color: green;
     padding: 10px;
 }
 .DashBoard_Right{
